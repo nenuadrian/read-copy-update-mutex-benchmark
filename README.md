@@ -1,5 +1,7 @@
 # RCU read-copy-update vs mutex naive benchmark
 
+RCU allows concurrent reads and updates by maintaining multiple versions of objects, ensuring that updates do not interfere with ongoing reads. The key components of RCU are the publish-subscribe mechanism for insertion, waiting for existing RCU readers to complete before deletion, and maintaining multiple versions of updated objects to avoid disrupting readers. This mechanism provides scalability and performance benefits, especially in multi-threaded environments.
+
 # RCU
 
 https://lwn.net/Articles/262464/

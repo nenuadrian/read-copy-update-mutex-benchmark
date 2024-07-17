@@ -1,3 +1,3 @@
-g++ -std=c++17 -o mutex_benchmark mutex.cpp -lpthread
+g++ -std=c++17 -o mutex_benchmark mutex_benchmark.cpp -lpthread
 
-./mutex_benchmark
+time ./mutex_benchmark

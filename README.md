@@ -7,21 +7,29 @@ RCU allows concurrent reads and updates by maintaining multiple versions of obje
 https://lwn.net/Articles/262464/
 
 ```
-Read operations: 70603
-Write operations: 1780
-Total read time: 89571895 microseconds
-Total write time: 12829 microseconds
-Average read time: 1268 microseconds
-Average write time: 7 microseconds
+Read operations: 66117
+Write operations: 1769
+Total read time: 83723688 microseconds
+Total write time: 2384 microseconds
+Average read time: 1266 microseconds
+Average write time: 1 microseconds
+
+real	0m10.976s
+user	0m0.206s
+sys	0m0.736s
 ```
 
 # Mutex
 
 ```
-Read operations: 7895
+Read operations: 7880
 Write operations: 4
-Total read time: 80105498 microseconds
-Total write time: 20020762 microseconds
-Average read time: 10146 microseconds
-Average write time: 5005190 microseconds
+Total read time: 80124002 microseconds
+Total write time: 20000420 microseconds
+Average read time: 10168 microseconds
+Average write time: 5000105 microseconds
+
+real	0m10.289s
+user	0m0.043s
+sys	0m0.198s
 ```

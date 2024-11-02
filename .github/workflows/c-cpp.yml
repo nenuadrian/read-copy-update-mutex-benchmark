@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: run_mutex
+    - name: ./run_mutex
       run: run_mutex.sh
     - name: run_rcu
-      run: run_rcu.sh
+      run: ./run_rcu.sh
 

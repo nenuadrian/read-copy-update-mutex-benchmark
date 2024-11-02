@@ -1,5 +1,7 @@
 # RCU read-copy-update vs mutex naive benchmark
 
+[![C/C++ CI](https://github.com/nenuadrian/read-copy-update-mutex-benchmark/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/nenuadrian/read-copy-update-mutex-benchmark/actions/workflows/c-cpp.yml)
+
 RCU allows concurrent reads and updates by maintaining multiple versions of objects, ensuring that updates do not interfere with ongoing reads. The key components of RCU are the publish-subscribe mechanism for insertion, waiting for existing RCU readers to complete before deletion, and maintaining multiple versions of updated objects to avoid disrupting readers. This mechanism provides scalability and performance benefits, especially in multi-threaded environments.
 
 # RCU
